@@ -1,0 +1,76 @@
+.home-main-section{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-main-section .img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.home-main-section .bus-image{
+    background-image: url(dataflow.png);
+    flex-grow: 1;
+    max-height: 90vh;
+    min-width: 40vw;
+    background-size: 470px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.home-main-section .call-to-action{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    align-self: center;
+    align-items: flex-start;
+}
+
+.home-page-circle-1{
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgb(188, 58, 128, .2);
+    bottom: 5vw;
+    left: 5vw;
+    z-index: -1;
+}
+
+.home-page-circle-2{
+    position: absolute;
+    overflow: hidden;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgb(52, 87, 178, .1);
+    top: 0;
+    left: 35vw;
+    z-index: -1;
+}
+
+.home-page-circle-3{
+    position: absolute;
+    overflow: hidden;
+    width: 45vw;
+    height: 45vw;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.home-page-circle-3::before{
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgb(52, 87, 178, .2);
+
+}
